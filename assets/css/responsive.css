@@ -1,0 +1,115 @@
+
+
+
+/* Đơn vị em phụ thuộc vào thẻ cha chứa nó, nó phù hợp cho tất cả các tringh duyệt */
+/* mobile va table */
+
+@media(max-width: 63.9375em){
+    #nav  li a{
+        padding: 1px 24px;
+    } 
+    .modal-container{
+        margin: 0px 15px;
+    }
+    .btn{
+        padding: 15px 15px;
+    }
+    .content-section .contact-use{
+        padding: 14px 8px;
+        font-size: 16px;
+    }
+    .content-section .content-info{
+        line-height: 2;
+    }
+    .footer-list a{
+        padding: 0px 10px;
+        font-size: 39px;
+    }
+    .footer-address{
+        margin: 40px 0px;
+        font-size: 30px;
+    }
+    .contact-submit-btn{
+        font-size: 17px;
+    }
+}
+
+
+
+
+
+
+
+/* mobile */
+/* 
+Chỉ hoạt động trên mobile.
+    tạo cái này để ghi đè lên css kia.
+    css main nó dành cho tất cả các máy, còn css này chỉ dùng mobile.
+*/
+@media(max-width:46.1875em){
+
+    .s-8{
+        margin-top: 8px;
+    }
+
+    .s-col-full{
+        width: 100%;
+    }
+
+    .mt-16{
+        margin-top: 16px;
+    }
+    
+    #header .search-btn{
+        display: none;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        /* Cho header hiện xuống ko còn hiển thị 1 dòng */
+        display: block;
+    }
+
+
+
+    #nav .subnav {
+
+        /* Xóa thuôcj tính posotion */
+        position: initial; 
+        background-color:#333;
+    }
+
+    #nav .subnav a{
+        color: #ffff;
+        padding:5px 41px;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .col-third{
+        width: 100%;
+    }
+    
+    #content .member-avt{
+        width: 60%;
+    }
+
+    #content .member-list{
+        margin-top: 30px;
+    }
+
+    .content-section .content-info{
+        margin-bottom: 17px;
+    }
+
+    
+}

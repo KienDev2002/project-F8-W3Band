@@ -1,0 +1,102 @@
+/* reset css: cài lại css */
+*{
+    /* tác dụng lên các thẻ, kể cả thẻ ko có chữ */
+    /* emmet: viết tắt */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* Để giúp cho sửa cho font chữ của cả website, có tác dụng cho thẻ có chữ thôi */
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*
+ Bấm Ctrl V để paste vào, sau đó bấm chọn đầu mỗi dòng id kèm nút Alt + Shift và nhập ký tự # vào.
+- Sau đó bấm Alt + Shift + mũi tên sang phải, rồi nhập {} và cùng nhấn enter xuống dòng.
+ */
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+}
+.nav ul li{
+
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    /* inline: trên 1 dòng, block: giữ đc tính chaasrt khối, kích thước của nó
+    để cho toàn cái chiều cao của nó.
+    */
+    /* Cách 2 căn giữa: dùng padding: 16px 24px; */
+    position: relative;
+}
+
+#nav > li > a{
+    /* viết in hoa */
+    text-transform:uppercase ;
+}
+
+#nav li a{
+    color: #fff;
+    /* text-decoration: none: để bỏ gạch chân đi */
+    text-decoration: none;
+    /* cách 1: căn giữa lấy chiều cao của dòng đó 
+        Áp dụng cho chữ.    
+    */
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav ,  .subnav{
+    /* Xoá dấu chấm */
+    list-style-type: none;
+}
+
+#nav .subnav{
+    /* display: hiển thị, none là ẩn đi */
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    /* Bóng đổ: trục x + trục y + độ blur(mờ phông) + màu */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    /* dùng top 100% của thẻ cha là thử li và nằm trái bằng 0 */
+    top: 100%;
+    left: 0;
+}
+
+
+#nav > li:hover > a,#nav .subnav li:hover{
+    color: #000;
+    background-color: gray;
+  /* inline: trên 1 dòng, block: giữ đc tính chất khối, kích thước của nó 
+    để cho toàn cái chiều cao của nó.
+    */ 
+    
+}
+
+#nav .subnav a{
+    color:#000;
+}
+
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}
